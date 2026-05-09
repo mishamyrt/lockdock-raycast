@@ -21,6 +21,11 @@ brew install mishamyrt/tap/lockdock
 lockdock enable
 ```
 
+> ☝️ The daemon requires Accessibility permission to manage the Dock's position.
+
+The first time you lock a position, a message will appear requesting Accessibility permission for the Lockdock app.
+Make sure you grant this permission, as the app won't work without it.
+
 ## Usage
 
 Run the **Pin Dock** command in Raycast and choose a display to move and lock the Dock there.
