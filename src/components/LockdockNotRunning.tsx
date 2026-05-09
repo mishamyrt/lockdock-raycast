@@ -1,8 +1,9 @@
-import { List, Icon, ActionPanel, Action } from "@raycast/api";
+import { List, Icon, ActionPanel, Action, popToRoot } from "@raycast/api";
 import { runInTerminal } from "../lib/terminal";
 
 function enableDaemon(binPath: string) {
   runInTerminal(`${binPath} enable`);
+  popToRoot();
 }
 
 export function LockdockNotRunning({ binPath }: { binPath: string }) {
