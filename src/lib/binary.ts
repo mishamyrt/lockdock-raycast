@@ -4,6 +4,7 @@ import path from "node:path";
 
 const DEFAULT_PATHS = [
   "/opt/homebrew/bin/lockdock",
+  "/usr/local/bin/lockdock",
   path.join(homedir(), ".local", "bin", "lockdock"),
 ];
 
