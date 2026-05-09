@@ -10,9 +10,7 @@ const DEFAULT_PATHS = [
 
 export class LockdockNotInstalledError extends Error {
   constructor() {
-    super(
-      "LockDock is not installed or not found in PATH. Install it with: brew install mishamyrt/tap/lockdock",
-    );
+    super("LockDock is not installed or not found in PATH. Install it with: brew install mishamyrt/tap/lockdock");
     this.name = "LockdockNotInstalledError";
   }
 }
